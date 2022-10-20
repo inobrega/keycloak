@@ -82,7 +82,7 @@ public class OIDCWellKnownProvider implements WellKnownProvider {
     public static final List<String> DEFAULT_CLIENT_AUTH_SIGNING_ALG_VALUES_SUPPORTED = list(Algorithm.RS256.toString());
 
     // The exact list depends on protocolMappers
-    public static final List<String> DEFAULT_CLAIMS_SUPPORTED= list("aud", "sub", "iss", IDToken.AUTH_TIME, IDToken.NAME, IDToken.GIVEN_NAME, IDToken.FAMILY_NAME, IDToken.PREFERRED_USERNAME, IDToken.EMAIL, IDToken.ACR);
+    public static final List<String> DEFAULT_CLAIMS_SUPPORTED= list("aud", "sub", "iss", IDToken.AUTH_TIME, IDToken.NAME, IDToken.GIVEN_NAME, IDToken.FAMILY_NAME, IDToken.PREFERRED_USERNAME, IDToken.EMAIL, IDToken.ACR, IDToken.CPF, IDToken.CNPJ, "sharing_duration", "openbanking_intent_id");
 
     public static final List<String> DEFAULT_CLAIM_TYPES_SUPPORTED= list("normal");
 
